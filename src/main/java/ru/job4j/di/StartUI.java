@@ -1,12 +1,15 @@
 package ru.job4j.di;
 
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-@AllArgsConstructor
 public class StartUI {
+    @Autowired
     private Store store;
+
+    @Autowired
     private ConsoleInput consoleInput;
 
     public void add(String value) {
