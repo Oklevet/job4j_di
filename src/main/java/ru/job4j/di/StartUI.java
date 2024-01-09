@@ -1,7 +1,9 @@
 package ru.job4j.di;
 
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Component;
 
+@Component
 @AllArgsConstructor
 public class StartUI {
     private Store store;
